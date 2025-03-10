@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konsultasi Kerja Praktek - Sistem Akademik</title>
+  <meta name="description" content="Ajukan pertanyaan dan konsultasikan Kerja Praktek Anda dengan dosen pembimbing melalui platform ini.">
+  <link rel="stylesheet" href="stylesss.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">
+        <i data-lucide="graduation-cap"></i>
+        <span>Akademik</span>
+      </a>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+          <li><a href="magang.html" class="active"><i data-lucide="briefcase"></i> Kerja Praktek</a></li>
+          <li><a href="skripsi.html"><i data-lucide="graduation-cap"></i> Skripsi</a></li>
+        </ul>
+      </nav>
+
+      <div class="auth-nav">
+        <a href="login.html" class="login-btn">
+          <i data-lucide="user"></i>
+          Login
+        </a>
+      </div>
+
+      <button class="mobile-menu-btn">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+
+    <div class="mobile-menu">
+      <ul>
+        <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+        <li><a href="magang.html" class="active"><i data-lucide="briefcase"></i> Kerja Praktek</a></li>
+        <li><a href="skripsi.html"><i data-lucide="graduation-cap"></i> Skripsi</a></li>
+        <li><a href="login.html"><i data-lucide="user"></i> Login</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="magang-page">
+    <section class="page-header">
+      <div class="container">
+        <div class="header-badge">
+          <i data-lucide="briefcase"></i>
+          Kerja Praktek
+        </div>
+        <h1>Konsultasi Kerja Praktek</h1>
+        <p>Ajukan pertanyaan dan konsultasikan Kerja Praktek Anda dengan dosen pembimbing melalui platform ini.</p>
+      </div>
+    </section>
+
+    <section class="content-tabs">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab-button active" data-tab="overview">Ikhtisar</button>
+          <button class="tab-button" data-tab="consultation">Konsultasi</button>
+          <button class="tab-button" data-tab="history">Riwayat</button>
+        </div>
+
+        <div class="tab-content active" id="overview">
+          <div class="cards-grid">
+            <div class="card requirements-card">
+              <div class="card-header">
+                <i data-lucide="check-circle"></i>
+                <h3>Persyaratan Kerja Praktek</h3>
+              </div>
+              <div class="card-body">
+                <ul class="requirements-list">
+                  <li><i data-lucide="check-circle"></i> Telah menyelesaikan minimal 100 SKS</li>
+                  <li><i data-lucide="check-circle"></i> IPK minimal 2.50</li>
+                  <li><i data-lucide="check-circle"></i> Telah lulus mata kuliah prasyarat</li>
+                  <li><i data-lucide="check-circle"></i> Mengisi formulir pendaftaran KP</li>
+                  <li><i data-lucide="check-circle"></i> Mendapatkan persetujuan dari dosen pembimbing</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="card timeline-card">
+              <div class="card-header">
+                <i data-lucide="clock"></i>
+                <h3>Prosedur & Timeline</h3>
+              </div>
+              <div class="card-body">
+                <ol class="timeline">
+                  <li>
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                      <h4>Pendaftaran KP</h4>
+                      <p>Dua bulan sebelum pelaksanaan</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                      <h4>Persetujuan Dosen</h4>
+                      <p>1-2 minggu setelah pendaftaran</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                      <h4>Pelaksanaan KP</h4>
+                      <p>Selama 1-3 bulan</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                      <h4>Penyusunan Laporan</h4>
+                      <p>Maksimal 1 bulan setelah KP</p>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="card lecturers-card">
+            <div class="card-header">
+              <i data-lucide="users"></i>
+              <h3>Dosen Pembimbing Kerja Praktek</h3>
+              <p>Berikut adalah daftar dosen yang dapat menjadi pembimbing KP Anda</p>
+            </div>
+            <div class="card-body">
+              <div class="lecturers-grid">
+                <div class="lecturer">
+                  <div class="lecturer-avatar">BS</div>
+                  <div class="lecturer-info">
+                    <h4>Dr. Budi Santoso, M.Kom.</h4>
+                    <p>Sistem Informasi, Web Development</p>
+                  </div>
+                </div>
+
+                <div class="lecturer">
+                  <div class="lecturer-avatar">RW</div>
+                  <div class="lecturer-info">
+                    <h4>Prof. Rina Wijaya, Ph.D.</h4>
+                    <p>Database, Data Mining</p>
+                  </div>
+                </div>
+
+                <div class="lecturer">
+                  <div class="lecturer-avatar">AF</div>
+                  <div class="lecturer-info">
+                    <h4>Dr. Ahmad Fauzi, M.T.</h4>
+                    <p>Jaringan Komputer, Keamanan Siber</p>
+                  </div>
+                </div>
+
+                <div class="lecturer">
+                  <div class="lecturer-avatar">SR</div>
+                  <div class="lecturer-info">
+                    <h4>Dr. Siti Rahayu, M.Sc.</h4>
+                    <p>Mobile App, UI/UX</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="consultation">
+          <div class="card form-card">
+            <div class="card-header">
+              <i data-lucide="file-text"></i>
+              <h3>Form Konsultasi Kerja Praktek</h3>
+              <p>Gunakan formulir di bawah ini untuk mengajukan konsultasi dengan dosen pembimbing</p>
+            </div>
+            <div class="card-body">
+              <form id="consultationForm" class="consultation-form">
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label for="title">Judul Kerja Praktek</label>
+                    <input type="text" id="title" placeholder="Masukkan judul kerja praktek Anda" required>
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="supervisor">Dosen Pembimbing</label>
+                    <select id="supervisor" required>
+                      <option value="" disabled selected>Pilih dosen pembimbing</option>
+                      <option value="1">Dr. Budi Santoso, M.Kom.</option>
+                      <option value="2">Prof. Rina Wijaya, Ph.D.</option>
+                      <option value="3">Dr. Ahmad Fauzi, M.T.</option>
+                      <option value="4">Dr. Siti Rahayu, M.Sc.</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="description">Deskripsi / Pertanyaan</label>
+                  <textarea id="description" rows="5" placeholder="Jelaskan secara detail mengenai konsultasi Anda" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                  <label for="company">Perusahaan / Instansi</label>
+                  <input type="text" id="company" placeholder="Nama perusahaan tempat kerja praktek" required>
+                </div>
+                
+                <div class="form-group">
+                  <label>Unggah Dokumen</label>
+                  <div class="file-upload">
+                    <label for="file-upload" class="file-upload-area">
+                      <i data-lucide="upload"></i>
+                      <p><strong>Klik untuk unggah</strong> atau drag and drop</p>
+                      <p class="file-types">PDF, DOCX, atau ZIP (Maks. 10MB)</p>
+                      <input id="file-upload" type="file" accept=".pdf,.docx,.doc,.zip">
+                    </label>
+                  </div>
+                  <div class="selected-file" id="selected-file" style="display: none;">
+                    <i data-lucide="file"></i>
+                    <span id="file-name"></span>
+                  </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                  <i data-lucide="send"></i>
+                  Kirim Konsultasi
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="history">
+          <div class="card">
+            <div class="card-header">
+              <i data-lucide="clock"></i>
+              <h3>Riwayat Konsultasi</h3>
+              <p>Berikut adalah daftar riwayat konsultasi Kerja Praktek Anda</p>
+            </div>
+            <div class="card-body">
+              <div class="history-list">
+                <div class="history-card">
+                  <div class="history-header">
+                    <div class="history-title">
+                      <h4>Pengembangan Aplikasi Web E-Commerce</h4>
+                      <span class="date"><i data-lucide="calendar"></i> 12 Juli 2023</span>
+                    </div>
+                    <div class="status completed">Selesai</div>
+                  </div>
+                  
+                  <div class="history-details">
+                    <div class="supervisor"><i data-lucide="user"></i> Dr. Budi Santoso, M.Kom.</div>
+                    <div class="company"><i data-lucide="building"></i> PT Teknologi Global</div>
+                  </div>
+                  
+                  <p class="description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies ultrices, nunc nisl ultricies nisi, eget ultricies nisl nunc eget nisl.
+                  </p>
+                  
+                  <div class="history-footer">
+                    <button class="btn btn-outline toggle-details">
+                      <i data-lucide="chevron-down"></i>
+                      Detail
+                    </button>
+                    
+                    <button class="btn btn-outline">
+                      <i data-lucide="download"></i>
+                      Unduh
+                    </button>
+                  </div>
+                  
+                  <div class="messages" style="display: none;">
+                    <h5><i data-lucide="message-square"></i> Riwayat Diskusi</h5>
+                    
+                    <div class="message-list">
+                      <div class="message student">
+                        <p>Selamat siang Pak, saya ingin mengajukan konsultasi mengenai revisi yang Bapak berikan kemarin.</p>
+                        <div class="message-time"><i data-lucide="clock"></i> 12 Juli 2023, 10:30</div>
+                      </div>
+                      
+                      <div class="message supervisor">
+                        <p>Baik, silakan lanjutkan pengerjaan sesuai arahan yang sudah saya berikan. Pastikan revisi selesai tepat waktu.</p>
+                        <div class="message-time"><i data-lucide="clock"></i> 12 Juli 2023, 13:45</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="history-card">
+                  <div class="history-header">
+                    <div class="history-title">
+                      <h4>Pengembangan Sistem Informasi Akademik</h4>
+                      <span class="date"><i data-lucide="calendar"></i> 5 Juni 2023</span>
+                    </div>
+                    <div class="status revision">Revisi</div>
+                  </div>
+                  
+                  <div class="history-details">
+                    <div class="supervisor"><i data-lucide="user"></i> Prof. Rina Wijaya, Ph.D.</div>
+                    <div class="company"><i data-lucide="building"></i> PT Solusi Digital</div>
+                  </div>
+                  
+                  <p class="description">
+                    Nullam auctor, nisl eget ultricies ultrices, nunc nisl ultricies nisi, eget ultricies nisl nunc eget nisl.
+                  </p>
+                  
+                  <div class="history-footer">
+                    <button class="btn btn-outline toggle-details">
+                      <i data-lucide="chevron-down"></i>
+                      Detail
+                    </button>
+                    
+                    <button class="btn btn-outline">
+                      <i data-lucide="download"></i>
+                      Unduh
+                    </button>
+                  </div>
+                  
+                  <div class="messages" style="display: none;">
+                    <h5><i data-lucide="message-square"></i> Riwayat Diskusi</h5>
+                    
+                    <div class="message-list">
+                      <div class="message student">
+                        <p>Selamat pagi Bu, saya sudah menyelesaikan revisi sesuai arahan Ibu.</p>
+                        <div class="message-time"><i data-lucide="clock"></i> 5 Juni 2023, 09:15</div>
+                      </div>
+                      
+                      <div class="message supervisor">
+                        <p>Ada beberapa bagian yang masih perlu diperbaiki. Tolong perhatikan komentar pada bagian metodologi penelitian.</p>
+                        <div class="message-time"><i data-lucide="clock"></i> 5 Juni 2023, 14:20</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="footer-logo">
+            <i data-lucide="graduation-cap"></i>
+            <span>Akademik</span>
+          </a>
+          <p>
+            Platform akademik terpadu yang dirancang untuk memudahkan proses pembelajaran
+            dan administrasi akademik bagi mahasiswa, dosen, dan staf administrasi.
+          </p>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Menu Akademik</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="magang.html">Kerja Praktek</a></li>
+            <li><a href="skripsi.html">Skripsi</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>Bantuan</h3>
+          <ul>
+            <li><a href="#">Panduan Penggunaan</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Kontak</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2023</span> Sistem Akademik. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="magang.js"></script>
+</body>
+</html>
