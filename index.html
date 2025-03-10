@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistem Akademik</title>
+    <meta name="description" content="Platform akademik terpadu untuk mahasiswa, dosen, dan staf administrasi" />
+    <meta name="author" content="Akademik" />
+    <meta property="og:image" content="/og-image.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="logo">
+          <i data-lucide="graduation-cap"></i>
+          <span>Akademik</span>
+        </a>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active"><i data-lucide="home"></i> Home</a></li>
+            <li><a href="dashboard.html"><i data-lucide="graduation-cap"></i> Dashboard</a></li>
+            <li><a href="krs.html"><i data-lucide="book-open"></i> KRS</a></li>
+            <li><a href="grades.html"><i data-lucide="file-text"></i> Nilai</a></li>
+            <li><a href="internship.html"><i data-lucide="briefcase"></i> Kerja Praktek</a></li>
+            <li><a href="thesis.html"><i data-lucide="graduation-cap"></i> Skripsi</a></li>
+          </ul>
+        </nav>
+
+        <div class="auth-nav">
+          <a href="login.html" class="login-btn">
+            <i data-lucide="user"></i>
+            Login
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+          <li><a href="dashboard.html"><i data-lucide="graduation-cap"></i> Dashboard</a></li>
+          <li><a href="krs.html"><i data-lucide="book-open"></i> KRS</a></li>
+          <li><a href="grades.html"><i data-lucide="file-text"></i> Nilai</a></li>
+          <li><a href="internship.html"><i data-lucide="briefcase"></i> Kerja Praktek</a></li>
+          <li><a href="thesis.html"><i data-lucide="graduation-cap"></i> Skripsi</a></li>
+          <li><a href="login.html"><i data-lucide="user"></i> Login</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="badge">Platform Akademik Terpadu</div>
+            <h1>Kelola Studi Akademik <span>Dengan Mudah</span></h1>
+            <p>
+              Platform untuk mengelola KRS, nilai semester, proses pendaftaran Kerja Praktek dan Sidang Skripsi dengan antarmuka yang intuitif.
+            </p>
+            <div class="hero-buttons">
+              <a href="login.html" class="btn btn-primary">
+                Masuk Sekarang
+                <i data-lucide="chevron-right"></i>
+              </a>
+              <a href="#features" class="btn btn-secondary">
+                Pelajari Fitur
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="dashboard-preview">
+              <div class="preview-header">
+                <div class="dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="title">Dashboard Akademik</div>
+              </div>
+              <div class="preview-body">
+                <div class="stats-grid">
+                  <div class="stat-card">
+                    <div class="stat-label">Semester Aktif</div>
+                    <div class="stat-value">Semester 5</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-label">Total SKS</div>
+                    <div class="stat-value">98 SKS</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-label">IPK</div>
+                    <div class="stat-value">3.78</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-label">Mata Kuliah</div>
+                    <div class="stat-value">6 MK</div>
+                  </div>
+                </div>
+                <div class="progress-card">
+                  <div class="progress-header">
+                    <div class="progress-label">Progress Studi</div>
+                    <div class="progress-percent">78%</div>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 78%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="features">
+        <div class="container">
+          <div class="section-header">
+            <h2>Fitur Utama Sistem Akademik</h2>
+            <p>
+              Platform kami menyediakan berbagai fitur untuk memudahkan perjalanan akademik Anda.
+            </p>
+          </div>
+          
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i data-lucide="book-open"></i>
+              </div>
+              <h3>Kontrak Rencana Studi</h3>
+              <p>
+                Kelola KRS dengan mudah, lihat mata kuliah yang telah diambil, dan pantau jumlah SKS setiap semester.
+              </p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i data-lucide="file-text"></i>
+              </div>
+              <h3>Nilai & IPK</h3>
+              <p>
+                Lihat nilai dari semua semester, IP per semester, dan IPK keseluruhan dalam format grafik atau tabel.
+              </p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i data-lucide="briefcase"></i>
+              </div>
+              <h3>Kerja Praktek</h3>
+              <p>
+                Ajukan pendaftaran KP dengan mengisi formulir online dan pantau status persetujuan dari dosen pembimbing.
+              </p>
+            </div>
+            
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i data-lucide="graduation-cap"></i>
+              </div>
+              <h3>Sidang Skripsi</h3>
+              <p>
+                Daftar sidang skripsi, lihat syarat yang harus dipenuhi, dan peroleh persetujuan dari dosen pembimbing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- CTA Section -->
+      <section class="cta">
+        <div class="container">
+          <h2>Siap Mengelola Perjalanan Akademik Anda?</h2>
+          <p>
+            Bergabunglah dengan ribuan mahasiswa yang telah menggunakan platform kami untuk memudahkan pengelolaan studi mereka.
+          </p>
+          <a href="login.html" class="btn btn-primary">
+            Mulai Sekarang
+            <i data-lucide="chevron-right"></i>
+          </a>
+        </div>
+      </section>
+      
+      <!-- Testimonials -->
+      <section class="testimonials">
+        <div class="container">
+          <div class="section-header">
+            <h2>Apa Kata Mereka?</h2>
+            <p>
+              Dengarkan pengalaman mahasiswa dan dosen yang telah menggunakan platform kami.
+            </p>
+          </div>
+          
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="user-info">
+                <div class="avatar">RS</div>
+                <div class="user-details">
+                  <h4>Rahmat Setiawan</h4>
+                  <p>Mahasiswa Teknik Informatika</p>
+                </div>
+              </div>
+              <p class="quote">
+                "Platform ini sangat membantu saya dalam mengelola KRS dan memantau perkembangan nilai setiap semester. Antarmukanya intuitif dan mudah digunakan."
+              </p>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="user-info">
+                <div class="avatar">NA</div>
+                <div class="user-details">
+                  <h4>Nur Aini</h4>
+                  <p>Dosen Fakultas Ekonomi</p>
+                </div>
+              </div>
+              <p class="quote">
+                "Sebagai dosen, saya terbantu dengan kemudahan persetujuan KRS mahasiswa dan pendaftaran KP/Skripsi. Sistem notifikasi juga sangat membantu."
+              </p>
+            </div>
+            
+            <div class="testimonial-card">
+              <div class="user-info">
+                <div class="avatar">AP</div>
+                <div class="user-details">
+                  <h4>Adi Pratama</h4>
+                  <p>Admin Akademik</p>
+                </div>
+              </div>
+              <p class="quote">
+                "Pengelolaan data akademik menjadi lebih efisien dengan sistem ini. Pemrosesan KRS dan pendaftaran sidang skripsi menjadi lebih terstruktur."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <a href="index.html" class="footer-logo">
+              <i data-lucide="graduation-cap"></i>
+              <span>Akademik</span>
+            </a>
+            <p>
+              Platform akademik terpadu yang dirancang untuk memudahkan proses pembelajaran
+              dan administrasi akademik bagi mahasiswa, dosen, dan staf administrasi.
+            </p>
+          </div>
+          
+          <div class="footer-links">
+            <h3>Menu Akademik</h3>
+            <ul>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="krs.html">Kontrak Rencana Studi</a></li>
+              <li><a href="grades.html">Nilai & IPK</a></li>
+              <li><a href="internship.html">Kerja Praktek</a></li>
+              <li><a href="thesis.html">Skripsi</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-links">
+            <h3>Bantuan</h3>
+            <ul>
+              <li><a href="#">Panduan Penggunaan</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Sistem Akademik. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

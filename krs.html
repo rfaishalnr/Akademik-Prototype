@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontrak Rencana Studi - Sistem Akademik</title>
+    <meta name="description" content="Kelola Kontrak Rencana Studi (KRS)" />
+    <meta name="author" content="Akademik" />
+    <meta property="og:image" content="/og-image.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  </head>
+
+  <body class="dashboard-page">
+    <header class="navbar">
+      <div class="navbar-container">
+        <a href="index.html" class="logo">
+          <i data-lucide="graduation-cap"></i>
+          <span>Akademik</span>
+        </a>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+            <li><a href="dashboard.html"><i data-lucide="graduation-cap"></i> Dashboard</a></li>
+            <li><a href="krs.html" class="active"><i data-lucide="book-open"></i> KRS</a></li>
+            <li><a href="grades.html"><i data-lucide="file-text"></i> Nilai</a></li>
+            <li><a href="internship.html"><i data-lucide="briefcase"></i> Kerja Praktek</a></li>
+            <li><a href="thesis.html"><i data-lucide="graduation-cap"></i> Skripsi</a></li>
+          </ul>
+        </nav>
+
+        <div class="auth-nav">
+          <div class="user-menu">
+            <button class="user-menu-btn">
+              <div class="avatar">JD</div>
+              <span>John Doe</span>
+              <i data-lucide="chevron-down"></i>
+            </button>
+            <div class="user-dropdown">
+              <a href="#"><i data-lucide="user"></i> Profil</a>
+              <a href="#"><i data-lucide="settings"></i> Pengaturan</a>
+              <a href="index.html"><i data-lucide="log-out"></i> Logout</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="mobile-menu-btn">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+          <li><a href="dashboard.html"><i data-lucide="graduation-cap"></i> Dashboard</a></li>
+          <li><a href="krs.html"><i data-lucide="book-open"></i> KRS</a></li>
+          <li><a href="grades.html"><i data-lucide="file-text"></i> Nilai</a></li>
+          <li><a href="internship.html"><i data-lucide="briefcase"></i> Kerja Praktek</a></li>
+          <li><a href="thesis.html"><i data-lucide="graduation-cap"></i> Skripsi</a></li>
+          <li><a href="index.html"><i data-lucide="log-out"></i> Logout</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="dashboard-main">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <h1>Kontrak Rencana Studi</h1>
+            <p>Kelola dan lihat riwayat KRS per semester.</p>
+          </div>
+          <div class="page-actions">
+            <button class="btn btn-primary">
+              <i data-lucide="plus"></i>
+              Buat KRS Baru
+            </button>
+          </div>
+        </div>
+
+        <!-- KRS Summary -->
+        <div class="dashboard-card">
+          <div class="card-header">
+            <h3>Ringkasan KRS</h3>
+            <div class="card-actions">
+              <select class="semester-selector">
+                <option>Semester 5 (Aktif)</option>
+                <option>Semester 4</option>
+                <option>Semester 3</option>
+                <option>Semester 2</option>
+                <option>Semester 1</option>
+              </select>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="krs-summary">
+              <div class="krs-stats">
+                <div class="krs-stat-item">
+                  <span class="stat-label">Jumlah Mata Kuliah</span>
+                  <span class="stat-value">6</span>
+                </div>
+                <div class="krs-stat-item">
+                  <span class="stat-label">Total SKS</span>
+                  <span class="stat-value">24</span>
+                </div>
+                <div class="krs-stat-item">
+                  <span class="stat-label">Status KRS</span>
+                  <span class="stat-value">
+                    <span class="badge badge-success">Disetujui</span>
+                  </span>
+                </div>
+                <div class="krs-stat-item">
+                  <span class="stat-label">Dosen PA</span>
+                  <span class="stat-value">Dr. Budi Santoso</span>
+                </div>
+              </div>
+
+              <div class="krs-actions">
+                <button class="btn btn-outline">
+                  <i data-lucide="printer"></i>
+                  Cetak KRS
+                </button>
+                <button class="btn btn-outline">
+                  <i data-lucide="download"></i>
+                  Unduh PDF
+                </button>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>Kode</th>
+                    <th>Mata Kuliah</th>
+                    <th>SKS</th>
+                    <th>Kelas</th>
+                    <th>Jadwal</th>
+                    <th>Dosen</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>CS301</td>
+                    <td>Algoritma & Pemrograman</td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>Senin, 08:00 - 10:30</td>
+                    <td>Dr. Budi Santoso</td>
+                  </tr>
+                  <tr>
+                    <td>CS302</td>
+                    <td>Basis Data</td>
+                    <td>4</td>
+                    <td>B</td>
+                    <td>Selasa, 13:00 - 15:30</td>
+                    <td>Prof. Dewi Anggraini</td>
+                  </tr>
+                  <tr>
+                    <td>CS303</td>
+                    <td>Jaringan Komputer</td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>Rabu, 08:00 - 10:30</td>
+                    <td>Dr. Ahmad Hidayat</td>
+                  </tr>
+                  <tr>
+                    <td>CS304</td>
+                    <td>Sistem Operasi</td>
+                    <td>4</td>
+                    <td>C</td>
+                    <td>Kamis, 13:00 - 15:30</td>
+                    <td>Dr. Maya Sari</td>
+                  </tr>
+                  <tr>
+                    <td>CS305</td>
+                    <td>Interaksi Manusia & Komputer</td>
+                    <td>3</td>
+                    <td>B</td>
+                    <td>Jumat, 08:00 - 10:30</td>
+                    <td>Dr. Rini Pratiwi</td>
+                  </tr>
+                  <tr>
+                    <td>CS306</td>
+                    <td>Kecerdasan Buatan</td>
+                    <td>4</td>
+                    <td>A</td>
+                    <td>Senin, 13:00 - 15:30</td>
+                    <td>Prof. Hadi Winoto</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- KRS History -->
+        <div class="dashboard-card mt-6">
+          <div class="card-header">
+            <h3>Riwayat KRS</h3>
+            <div class="card-actions">
+              <button class="btn btn-outline">
+                <i data-lucide="filter"></i>
+                Filter
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="krs-history">
+              <div class="krs-history-item">
+                <div class="krs-history-header">
+                  <div class="krs-semester">
+                    <h4>Semester 4</h4>
+                    <span class="badge badge-success">Selesai</span>
+                  </div>
+                  <div class="krs-semester-info">
+                    <div><strong>SKS:</strong> 22</div>
+                    <div><strong>IP:</strong> 3.66</div>
+                  </div>
+                  <div class="krs-semester-actions">
+                    <button class="btn btn-sm btn-outline">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="krs-history-item">
+                <div class="krs-history-header">
+                  <div class="krs-semester">
+                    <h4>Semester 3</h4>
+                    <span class="badge badge-success">Selesai</span>
+                  </div>
+                  <div class="krs-semester-info">
+                    <div><strong>SKS:</strong> 24</div>
+                    <div><strong>IP:</strong> 3.58</div>
+                  </div>
+                  <div class="krs-semester-actions">
+                    <button class="btn btn-sm btn-outline">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="krs-history-item">
+                <div class="krs-history-header">
+                  <div class="krs-semester">
+                    <h4>Semester 2</h4>
+                    <span class="badge badge-success">Selesai</span>
+                  </div>
+                  <div class="krs-semester-info">
+                    <div><strong>SKS:</strong> 20</div>
+                    <div><strong>IP:</strong> 3.61</div>
+                  </div>
+                  <div class="krs-semester-actions">
+                    <button class="btn btn-sm btn-outline">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="krs-history-item">
+                <div class="krs-history-header">
+                  <div class="krs-semester">
+                    <h4>Semester 1</h4>
+                    <span class="badge badge-success">Selesai</span>
+                  </div>
+                  <div class="krs-semester-info">
+                    <div><strong>SKS:</strong> 18</div>
+                    <div><strong>IP:</strong> 3.52</div>
+                  </div>
+                  <div class="krs-semester-actions">
+                    <button class="btn btn-sm btn-outline">Lihat Detail</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-about">
+            <a href="index.html" class="footer-logo">
+              <i data-lucide="graduation-cap"></i>
+              <span>Akademik</span>
+            </a>
+            <p>
+              Platform akademik terpadu yang dirancang untuk memudahkan proses pembelajaran
+              dan administrasi akademik bagi mahasiswa, dosen, dan staf administrasi.
+            </p>
+          </div>
+          
+          <div class="footer-links">
+            <h3>Menu Akademik</h3>
+            <ul>
+              <li><a href="dashboard.html">Dashboard</a></li>
+              <li><a href="krs.html">Kontrak Rencana Studi</a></li>
+              <li><a href="grades.html">Nilai & IPK</a></li>
+              <li><a href="internship.html">Kerja Praktek</a></li>
+              <li><a href="thesis.html">Skripsi</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-links">
+            <h3>Bantuan</h3>
+            <ul>
+              <li><a href="#">Panduan Penggunaan</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Kontak</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; <span id="current-year"></span> Sistem Akademik. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
